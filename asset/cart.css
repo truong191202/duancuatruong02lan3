@@ -1,0 +1,505 @@
+html {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+* {
+	font-size: 62.5%;
+	text-decoration: none;
+}
+
+@keyframes notice {
+	0% {
+		margin-top: 0px;
+		opacity: 0;
+	}
+
+	100% {
+		margin-top: 200px;
+		opacity: 1;
+	}
+}
+/* Navbar */
+nav {
+	height: 90px;
+	width: 100vw;
+	background-color: #0b1727;
+	border-bottom: 1px #ffeb01 solid;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+/* Navbar / Nav-search */
+.nav-search {
+	display: flex;
+	align-items: center;
+}
+
+.nav-search img{
+	margin-right: 200px;
+}
+
+.nav-search .search {
+	width: 750px;
+	height: 36px;
+	margin-right: 200px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.nav-search .search-icon {
+	font-size: 1rem;
+	height: 28px;
+	width: 60px;
+	background-color: #ffeb01;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.nav-search input {
+	width: 680px;
+	height: 33px;
+	border: none;
+	margin-right: 3px;
+	font-size: 1rem;
+}
+
+.nav-search .cart {
+	color: white;
+	font-size: 1.8rem;
+	margin-right: 30px;
+	position: relative;
+	display: block;
+}
+
+.nav-search .cart:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search .cart ~ button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search button {
+	width: 70px;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: #ffeb01;
+	font-weight: 700;
+	font-size: 0.8rem;
+	display: block;
+}
+
+.nav-search .avatar{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: none;
+}
+
+.nav-search .avatar ~ p{
+	font-size: 1rem;
+	font-weight: 900;
+	color: white;
+	display: none;
+}
+/* Lớp phủ */
+.coat {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	background-color: grey;
+	opacity: 0.5;
+	position: fixed;
+}
+
+/* Done */
+
+.done {
+	width: 100%;
+	height: 300px;
+	margin-top: 255px;
+	background-color: #0b1727;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 71%;
+	font-size: 1.3rem;
+	padding-top: 20px;
+}
+
+.done .row{
+	display: flex;
+	align-items: center;
+}
+
+.done .icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 1.5rem;
+	color: black;
+	text-align: center;
+	line-height: 43px;
+}
+
+.done .row p{
+	padding-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.done .column2 .title{
+	font-size: 1.5rem;
+	font-weight: 900;
+}
+
+.done .column2 .content{
+	font-size: 1.1rem;
+	opacity: 0.7;
+	line-height: 30px;
+}
+
+.done .icon-list{
+	display: flex;
+	margin-top: 20px;
+}
+
+.done .icon-list .icon{
+	border: 0.7px solid white;
+	border-radius: 5px;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.done .icon-list .icon:hover{
+	cursor: pointer;
+	background-color: aqua;
+}
+
+/* Row1 */
+.row1{
+    margin-top: 92px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to right,#0B1727,#FFEB01);
+    border-radius: 8px 0 0 8px;
+}
+
+.row1 .text{
+	margin-left: 30px;
+}
+
+.row1 p{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 40px;
+}
+
+.row2{
+    display: flex;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #0b1727;
+}
+
+.row2 .text1{
+    margin-left: 31px;
+    margin-right: 620px;
+}
+
+.row2 .text{
+    margin-right: 100px;
+}
+
+.product-list{
+    margin-top: 10px;
+}
+
+/* Product */
+.product{
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	font-size: 1.2rem;
+}
+
+.product img{
+	width: 100px;
+	height: 100px;
+}
+
+.product .content{
+	margin-left: 20px;
+	line-height: 27px;
+	max-width: 537px;
+}
+
+.product .title{
+	font-weight: 900;
+}
+
+.product .price{
+	margin-left: 95px;
+	min-width: 48px;
+	text-align: center;
+}
+
+.product .number-choose{
+	display: flex;
+	margin-left: 90px;
+}
+
+.product .number-choose .btn{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #0b1727;
+	text-align: center;
+}
+
+.product .number-choose p{
+	margin: 0 20px 0 20px;
+}
+
+.product .sum{
+	margin-left: 110px;
+	min-width: 48px;
+	text-align: center;
+}
+
+.product .action{
+	display: flex;
+	margin-left: 90px;
+}
+
+.product .action .btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #FFEB01;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 20px;
+}
+
+/* Pay row */
+.pay-row{
+	display: flex;
+	margin-left: 23px;
+	margin-top: 20px;
+	font-size: 1rem;
+}
+
+.pay-row .btn{
+	width: 160px;
+	height: 30px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 27px;
+	background-color: #FFEB01;
+}
+
+.pay-row .btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.pay-row > a{
+	margin-right: 500px;
+}
+
+.pay-row a{
+	color: black;
+}
+
+.pay-action{
+	display: flex;
+}
+
+.pay-action input{
+	margin-right: 20px;
+}
+
+.pay-action .btn:nth-child(2){
+	margin-right: 40px;
+}
+
+.pay-action .pay-sum{
+	margin-right: 30px;
+	min-width: 150px;
+	font-size: 1.2rem;
+	font-weight: 900;
+	line-height: 30px;
+}
+
+/* Pay form */
+.pay-form{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: #fff;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+	font-size: 1.3rem;
+}
+
+.pay-form input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pay-form .btn{
+	margin-left: 144px;
+	width: 150px;
+	height: 30px;
+	background-color: #FFEB01;
+	border-radius: 10px;
+	line-height: 30px;
+}
+
+.pay-form .btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.exit {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 2rem;
+	padding: 3px 10px;
+	background-color: #ffeb01;
+	border-radius: 50%;
+	color:black;
+}
+
+.exit:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.pay-form .waring{
+	font-size: 0.9rem;
+	margin-top: -10px;
+	color: red;
+	display: none;
+}
+
+/* sure-pay */
+.sure-pay {
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 530px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+	width: 540px;
+	height: 330px;
+	z-index: 6;
+	font-size: 1.5rem;
+	border-radius: 10px;
+}
+
+.sure-pay .btn-block{
+	display: flex;
+	margin-left: 370px;
+	margin-top: 200px;
+}
+
+.sure-pay .btn{
+	width: 150px;
+	height: 30px;
+	background-color: red;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+.sure-pay .ok{
+	background-color: green;
+}
+
+.sure-pay .btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+/* Wrong Info */
+.wrong-info{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 530px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+	width: 540px;
+	height: 330px;
+	z-index: 6;
+	font-size: 1.5rem;
+	border-radius: 10px;
+
+}
+
+.wrong-info .btn{
+	width: 90px;
+	height: 30px;
+	background-color: red;
+	margin-top: 200px;
+	margin-left: 370px;
+	border-radius: 10px;
+	background-color: green;
+}
+
+.wrong-info .btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+/* Pay success */
+.pay-success{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 530px;
+	background-color: #fff;
+	text-align: center;
+	display: none;
+	width: 540px;
+	height: 330px;
+	z-index: 6;
+	font-size: 1.5rem;
+	border-radius: 10px;
+
+}
+
+.pay-success .btn{
+	width: 90px;
+	height: 30px;
+	background-color: red;
+	margin-top: 200px;
+	margin-left: 370px;
+	border-radius: 10px;
+	background-color: green;
+}
+
+.pay-success .btn:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}

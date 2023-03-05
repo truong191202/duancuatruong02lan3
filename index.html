@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main page</title>
+		<link rel="stylesheet" href="./asset/reset.css" />
+		<link rel="stylesheet" href="./asset/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<div class="coat"></div>
+		<main>
+			<header>
+				<!-- Bang thong tin chi tiet san pham -->
+				<div class="viewinfo">
+					<img src="./asset/image/13promax.jpg" alt="" />
+					<div class="viewinfo-content">
+						<div class="title"><p>IPHONE 13 PRO MAX NEW</p></div>
+						<div class="price-info">
+							<p>Giá sản phẩm: <span>$2000</span></p>
+						</div>
+						<div class="quantity">
+							<div class="choose">
+								<p>Số lượng</p>
+								<button>-</button>
+								<p>1</p>
+								<button>+</button>
+							</div>
+						</div>
+						<p>Mã giảm giá</p>
+						<input
+							type="text"
+							name=""
+							id=""
+							placeholder="Nhập vào mã giảm giá....."
+						/>
+						<a href="./product.html">
+							<div class="btn1 btn"><p>Xem chi tiết</p></div>
+							</a>
+							<div class="btn2 btn"><p>Thêm vào giỏ</p></div>
+					</div>
+					<div class="exit">X</div>
+				</div>
+				<!-- Bang dang nhap -->
+				<div class="login">
+					<div class="login-title"><p>LOGIN</p></div>
+					<div class="username">
+						<input
+							placeholder="Enter your username ......"
+							type="text"
+							name=""
+							id=""
+						/>
+						<p id="username-text">Username phải lớn hơn 5 kí tự</p>
+					</div>
+					<div class="password">
+						<input
+							placeholder="Enter your password ......"
+							type="password"
+							name=""
+							id=""
+						/>
+						<p id="password-text">Password phải lớn hơn 5 kí tự</p>
+					</div>
+					<div class="gmail">
+						<input
+							placeholder="Enter your email ......"
+							type="text"
+							name=""
+							id=""
+						/>
+						<p id="gmail-text">Bạn phải nhập đúng định dạng email</p>
+					</div>
+					<div class="button"><p>LOGIN</p></div>
+					<div class="login-subtitle">
+						<div class="question">
+							<p>Do not have an account?</p>
+						</div>
+						<div class="sign-up"><p>SIGN UP</p></div>
+					</div>
+					<div class="exit">X</div>
+				</div>
+				<!-- Bang thong bao sau khi dang nhap -->
+				<div class="login-success">
+					<div class="login-notify"><p>Bạn đã đăng nhập thành công</p></div>
+					<i class="fa-solid fa-circle-check"></i>
+					<div class="exit">X</div>
+				</div>
+				<div class="login-fail">
+					<div class="login-notify"><p>Sai tài khoản hoặc mật khẩu vui lòng thử lại</p></div>
+					<i class="fa-solid fa-circle-xmark"></i>
+					<div class="exit">X</div>
+				</div>
+				<!-- Bang thong bao khach hang add san pham vao gio -->
+				<div class="sure-add">
+					<div class="titie"><p>Bạn muốn thêm vào giỏ hàng?</p></div>
+					<div class="sub-title"><p>Bạn có thể tiếp tục mua hàng và thanh toán sau!</p></div>
+					<div class="btn-block">
+						<div class="btn cancel">Cancel</div>
+						<div class="btn ok">OK</div>
+					</div>
+				</div>
+				<div class="add-success">
+					<div class="titie"><p>Thêm thành công!</p></div>
+					<div class="sub-title"><p>Nếu bạn muốn thanh toán, vui lòng vào giỏ hàng!</p></div>
+					<div class="btn ok">OK</div>
+				</div>
+				<!-- Dinh huong -->
+				<nav>
+					<div class="nav-search">
+						<a href="./index.html"><img src="./asset/image/logo.png" alt="" /></a>
+						<div class="search">
+							<input
+								type="text"
+								name=""
+								id=""
+								placeholder="Search something........"
+							/>
+							<div class="search-icon">
+								<i class="search-btn fas fa-search"></i>
+							</div>
+						</div>
+						<a href="./cart.html"><div class="cart">
+							<i class="cart-btn fas fa-cart-plus"></i>
+						</div></a>
+						<button>LOGIN</button>
+						<div class="avatar">
+							<img src="./asset/image/avatar.jpg" alt="">
+						</div>
+						<p></p>
+					</div>
+					<div class="nav-content">
+						<div class="nav-info"><a href="#">Trang Chủ</a></div>
+						<div class="nav-info"><a href="#intro">Giới Thiệu</a></div>
+						<div class="nav-info">
+							<a href="#video-review">Video Review</a>
+						</div>
+						<div class="nav-info"><a href="#contact">Liên Hệ</a></div>
+					</div>
+				</nav>
+				<div class="banner">
+					<div class="slide first"></div>
+					<div class="slide second"></div>
+					<div class="slide third"></div>
+					<div class="slide fourth"></div>
+				</div>
+			</header>
+			<div class="content">
+				<div class="title"><p>Latest Products</p></div>
+				<div class="product">
+					<div class="product-category">
+						<p class="category-title">Category</p>
+						<div class="space"></div>
+						<div class="category-name" id="iphone">
+							<p>Iphone</p>
+						</div>
+						<div class="category-name" id="ipad"><p>Ipad</p></div>
+						<div class="category-name" id="macbook">
+							<p>Macbook</p>
+						</div>
+						<div class="sub-img">
+							<img src="./asset/image/sub-img.png" alt="" />
+						</div>
+					</div>
+					<div class="product-choose">
+						<div class="product-input">
+							<form action="">
+								<select name="cars" id="price-choose">
+									<option value="any">
+										Lọc theo mức giá
+									</option>
+									<option value="mt2000">Trên 2000$</option>
+									<option value="from1000to2000">
+										Từ 1000$ - 2000$
+									</option>
+									<option value="lt1000">Dưới 1000$</option>
+								</select>
+							</form>
+							<form action="">
+								<select name="cars" id="sort">
+									<option value="any">Sắp xếp giá</option>
+									<option value="smallToHigher">
+										Từ thấp đến cao
+									</option>
+									<option value="highToSmaller">
+										Từ cao đến thấp
+									</option>
+								</select>
+							</form>
+							<div class="price-choose">
+								<label for="">Giá từ</label>
+								<input type="number" name="" id="from" />
+								<label for="">Đến</label>
+								<input type="number" name="" id="to" />
+							</div>
+							<button id="letFind">Tìm kiếm</button>
+						</div>
+						<div class="product-main">
+							<div class="product-list"></div>
+							<div class="number">
+								<button class="more"><p>Xem Thêm</p></button>
+							</div>
+							<div class="nav-button">
+								<div class="home"><p>Home</p></div>
+								<div class="prev"><p>Prev</p></div>
+								<div class="next"><p>Next</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact" id="contact">
+					<div class="contact-info">
+						<div class="title"><p>THÔNG TIN LIÊN HỆ</p></div>
+						<div class="title-info"><p>Với các gói giải pháp đa dạng, tiết kiệm về giá cả, tối ưu về chất lượng, <span>SHOPIT</span> hân hạnh cùng quý khách hàng tạo ra một vẻ ngoài chuyên nghiệp và đẹp nhất cho đội ngũ, doanh nghiệp của mình. Khi có nhu cầu, chỉ cần bạn liên hệ, đội ngũ <span>SHOPIT</span> sẽ có mặt tận nơi để phục vụ bạn.
+
+							<br/>Mọi chi tiết xin liên hệ:</p>
+						</div>
+						<div class="sub-title"><p>SHOPIT – GIẢI PHÁP HỌC ONLINE CHO HỌC SINH, SINH VIÊN</p></div>
+						<div class="sub-info"><p>Trụ sở chính: Toà nhà Novaland Richstar 2 – số 239-241 Hòa Bình, phường Hiệp Tân, quận Tân Phú, TPHCM
+
+							<br/>Điện thoại: 0886 249 022
+							
+							<br/>Email: info@shopit.vn
+							
+							<br/>Website: www.shopitz.xyz</p>
+						</div>
+						<div class="icon-contact">
+							<div class="icon"><i class="fab fa-facebook"></i></div>
+							<div class="icon"><i class="fab fa-github"></i></div>
+							<div class="icon"><i class="fab fa-youtube"></i></div>
+						</div>
+					</div>
+					<div class="contact-form">
+						<div class="title"><p>BIỂU MẪU LIÊN HỆ</p></div>
+						<form action="">
+							<label for="contact-name">Your name</label><br/>
+							<input type="text" name="" id="contact-name" placeholder="Enter your name..."><br/>
+							<label for="contact-email">Your email</label><br/>
+							<input type="text" name="" id="contact-email" placeholder="Enter your email..."><br/>
+							<label for="contact-title">Tiêu đề</label><br/>
+							<input type="text" name="" id="contact-title" placeholder="Enter your title..."><br/>
+							<label for="contact-message">Your message</label><br/>
+							<input type="text" name="" id="contact-message" placeholder="Enter your message...">
+						</form>
+						<div class="btn"><p>SUBMIT</p></div>
+					</div>
+				</div>
+				<div class="intro" id="intro">
+					<div class="title"><p>GIỚI THIỆU</p></div>
+					<div class="detail"><p><span>SHOPIT</span> là giải pháp tối ưu hoá các sản phẩm thông minh phù hợp với công nghệ hiện đại 4.0 cho mọi lứa tuổi, đặc biệt là học sinh, sinh viên học online trong tình hình dịch bệnh hiện nay,…</p></div>
+					<div class="avatar-intro">
+						<div class="avatar-detail"><img src="./asset/image/avatar.jpg" alt=""></div>
+						<div class="avatar-detail"><img src="./asset/image/avatar.jpg" alt=""></div>
+						<div class="avatar-detail"><img src="./asset/image/avatar.jpg" alt=""></div>
+						<div class="avatar-detail"><img src="./asset/image/avatar.jpg" alt=""></div>
+						<div class="avatar-detail"><img src="./asset/image/avatar.jpg" alt=""></div>
+					</div>
+					<div class="detail">
+						<p>Từ lâu, sản phẩm công nghệ đã trở thành một thứ tất yếu đối với tất cả mọi người và đóng vai trò quan trọng trong cuộc sống hàng ngày. Không chỉ vậy, những sản phẩm công nghệ còn thể hiện đẳng cấp, là niềm tự hào của người sử dụng, cầm một sản phẩm tốt giúp bạn tự tin hơn trong cuộc sống hàng ngày, chính vì thế nhóm các sinh viên SGU quyết định cho ra đời thương hiệu này.<br/>
+							<span>SHOPIT</span> được xây dựng dựa trên các nguyên tắc bất biến về sản phẩm và dịch vụ chăm sóc khách hàng:
+						</p>
+						<ul>
+							<li>Chất lượng sản phẩm đến tay khách hàng phải là TỐT NHẤT trong cùng tầm giá.</li>
+							<li>Dịch vụ chăm sóc khách hàng phải là TIỆN LỢI NHẤT khi khách hàng tìm đến <span>SHOPIT</span>.</li>
+						</ul>
+						<p>Với phương châm “Technology always accompanies you” cùng các gói sản xuất và dịch vụ đa dạng, <span>SHOPIT</span> là sự lựa chọn hoàn hảo khi bạn có nhu cầu đặt sản phẩm công nghệ. Đội ngũ <span>SHOPIT</span> với kinh nghiệm và sự tân tâm sẽ mang đến cho quý khách hàng những sản phẩm công nghệ đẹp, chất lượng đi cùng với giá thành và dịch vụ tốt nhất.
+
+							Triết lý kinh doanh của <span>SHOPIT</span>:</p>
+						<ul>
+							<li><span>CHẤT LƯỢNG:</span> Mọi sản phẩm của <span>SHOPIT</span> đều phải trải qua quy trình kiểm tra chất lượng kỹ lưỡng trước khi đến tay khách hàng.</li>
+							<li><span>UY TÍN:</span> Giữ uy tín trong mọi giao dịch với khách hàng và đối tác.</li>
+							<li><span>TỬ TẾ:</span> Xây dựng một cộng đồng tử tế. Tử tế với cộng sự, với khách hàng, với đối tác.</li>
+							<li><span>TẬN TÂM:</span> Tận tâm với từng sản phẩm làm ra, tận tâm chăm sóc từng khách hàng tìm của thương hiệu.</li>
+						</ul>
+						<p>Bạn chỉ cần có nhu cầu, đội ngũ <span>SHOPIT</span> sẽ đến tận nơi tư vấn các giải pháp phù hợp cho nhu cầu của bạn.<br/>
+
+							Trụ sở chính: Toà nhà Novaland Richstar 2 – số 239-241 Hoà Bình, phường Hiệp Tân, quận Tân Phú, TP HCM.<br/>
+							
+							Hotline: 0886.249.022<br/>
+							
+							Website: www.shopitz.xyz</p>
+					</div>
+				</div>
+				<div class="video" id="video-review">
+					<div class="row-title">
+						<p><pre>   VIDEO REVIEW SẢN PHẨM</pre></p>
+					</div>
+					<div class="row-detail">
+						<div class="video-detail">
+							<video src="./asset/video/video0.mp4" width="560px" height="315px" controls></video>
+							<p>Đánh giá iPhone 13 Pro Max sau 1 tháng: Rất tốt nhưng vẫn chưa hoàn hảo</p>
+						</div>
+						<div class="video-summary">
+							<div class="row">
+								<video src="./asset/video/video1.mp4" width="120px" height="88px" controls></video>
+								<div class="content"><p>Top Ipad giá ngon đáng mua nhất hiện nay là đây: Ipad 10.2 - Ipad Pro - Ipad Mini 5</p></div>
+							</div>
+							<div class="row">
+								<video src="./asset/video/video2.mp4" width="120px" height="88px" controls></video>
+								<div class="content"><p>Xuất hiện hình ảnh MacBook Pro 16 inch trong bản cập nhật macOS Catalina 10.15.1 beta 2</p></div>
+							</div>
+							<div class="row">
+								<video src="./asset/video/video3.mp4" width="120px" height="88px" controls></video>
+								<div class="content"><p>Hé lộ hình ảnh chiếc Iphone 13 ‘đẹp không góc chết’ sắp ra mắt</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="done">
+						<div class="container">
+							<div class="column1">
+								<div class="row">
+									<div class="icon"><i class="icon-footer fas fa-location-arrow"></i></div>
+									<div class="content"><p>100 An Dương Vương,<br/>Phường 1, Quận 5, TpHCM</p></div>
+								</div>
+								<div class="row">
+									<div class="icon"><i class="icon-footer fas fa-phone-volume"></i></div>
+									<div class="content"><p>+123456789</p></div>
+								</div>
+								<div class="row">
+									<div class="icon"><i class="icon-footer far fa-envelope-open"></i></div>
+									<div class="content"><p>ShopIT@gmail.com</p></div>
+								</div>
+							</div>
+							<div class="column2">
+								<div class="title"><p>About the ShopIT</p></div>
+								<div class="content"><p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>
+									sed do eiusmod tempor incididunt ut labore et dolore<br/>
+									magna aliqua. Ut enim ad minim veniam
+									</p>
+								</div>
+								<div class="icon-list">
+									<div class="icon"><i class="icon-footer fab fa-facebook"></i></div>
+									<div class="icon"><i class="icon-footer fab fa-youtube"></i></div>
+									<div class="icon"><i class="icon-footer fab fa-instagram"></i></div>
+									<div class="icon"><i class="icon-footer fab fa-linkedin-in"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</main>
+		<script src="./main.js"></script>
+	</body>
+</html>

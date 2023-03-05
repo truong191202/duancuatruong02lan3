@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product Review</title>
+		<link rel="stylesheet" href="./asset/reset.css" />
+		<link rel="stylesheet" href="./asset/cart.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+</head>
+<body>
+    <div class="coat"></div>
+	<!-- dien thong tin thanh toan -->
+	<div class="pay-form">
+		<div class="title"><p>Địa chỉ</p></div>
+		<input type="text" name="" id="address" placeholder="Enter your address....">
+		<div class="waring"><p>Địa chỉ không được bỏ trống</p></div>
+		<div class="title"><p>Số điện thoại</p></div>
+		<input type="text" name="" id="phonenumber" placeholder="Enter your phone....">
+		<div class="waring"><p>Sai định dạng số điện thoại</p></div>
+		<div class="btn"><p>Thanh toán ngay</p></div>
+		<div class="exit">X</div>
+	</div>
+	<!-- Thong bao sau khi dien thong tin -->
+	<div class="sure-pay">
+		<div class="titie"><p>Bạn chắc chắn muốn thanh toán?</p></div>
+		<div class="sub-title"><p>Số tiền bạn phải trả là $ <span>0</span></p></div>
+		<div class="btn-block">
+			<div class="btn cancel">Cancel</div>
+			<div class="btn ok">OK</div>
+		</div>
+	</div>
+	<div class="wrong-info">
+		<div class="titie"><p>Sai Thông Tin Nhận Hàng</p></div>
+		<div class="sub-title"><p>Vui lòng nhập đúng địa chỉ và số điện thoại</p></div>
+		<div class="btn ok">OK</div>
+	</div>
+	<div class="pay-success">
+		<div class="titie"><p>Thanh toán thành công!</p></div>
+		<div class="sub-title"><p>Vui lòng chuẩn bị tiền để nhận hàng!</p></div>
+		<div class="btn ok">OK</div>
+	</div>
+		<main>
+			<header>
+				<!-- Dinh huong -->
+				<nav>
+					<div class="nav-search">
+						<a href="./index.html"><img src="./asset/image/logo.png" alt="" /></a>
+						<div class="search">
+							<input
+								type="text"
+								name=""
+								id=""
+								placeholder="Search something........"
+							/>
+							<div class="search-icon">
+								<i class="search-btn fas fa-search"></i>
+							</div>
+						</div>
+						<div class="cart">
+							<i class="cart-btn fas fa-cart-plus"></i>
+						</div>
+						<button>LOGIN</button>
+						<div class="avatar">
+							<img src="./asset/image/avatar.jpg" alt="">
+						</div>
+						<p></p>
+					</div>
+				</nav>
+			</header>
+            <div class="row1">
+                <div class="text"><p>GIỎ HÀNG</p></div>
+            </div>
+            <div class="row2">
+                <div class="text1"><p>SẢN PHẨM</p></div>
+                <div class="text"><p>GIÁ</p></div>
+                <div class="text"><p>SỐ LƯỢNG</p></div>
+                <div class="text"><p>TỔNG</p></div>
+                <div class="text"><p>THAO TÁC</p></div>
+            </div>
+            <div class="product-list">
+			</div>
+			<div class="pay-row">
+				<a href="./index.html"><div class="btn"><p>Tiếp tục mua hàng</p></div><a>
+				<div class="pay-action">
+					<input type="text" name="" id="" placeholder="Nhập mã giảm giá">
+					<div class="btn">Sử dụng mã</div>
+					<div class="pay-sum"><p>Tổng tiền: $<span>0</span></p></div>
+					<div class="btn pay-btn">Thanh toán</div>
+				</div>
+			</div>
+            <footer>
+				<div class="done">
+					<div class="container">
+						<div class="column1">
+							<div class="row">
+								<div class="icon"><i class="icon-footer fas fa-location-arrow"></i></div>
+								<div class="content"><p>100 An Dương Vương,<br/>Phường 1, Quận 5, TpHCM</p></div>
+							</div>
+							<div class="row">
+								<div class="icon"><i class="icon-footer fas fa-phone-volume"></i></div>
+								<div class="content"><p>+123456789</p></div>
+							</div>
+							<div class="row">
+								<div class="icon"><i class="icon-footer far fa-envelope-open"></i></div>
+								<div class="content"><p>ShopIT@gmail.com</p></div>
+							</div>
+						</div>
+						<div class="column2">
+							<div class="title"><p>About the ShopIT</p></div>
+							<div class="content"><p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br/>
+								sed do eiusmod tempor incididunt ut labore et dolore<br/>
+								magna aliqua. Ut enim ad minim veniam
+								</p>
+							</div>
+							<div class="icon-list">
+								<div class="icon"><i class="icon-footer fab fa-facebook"></i></div>
+								<div class="icon"><i class="icon-footer fab fa-youtube"></i></div>
+								<div class="icon"><i class="icon-footer fab fa-instagram"></i></div>
+								<div class="icon"><i class="icon-footer fab fa-linkedin-in"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</main>
+    <script src="./cart.js"></script>
+</body>
+</html>

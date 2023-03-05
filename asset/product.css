@@ -1,0 +1,554 @@
+html {
+	box-sizing: border-box;
+	user-select: none;
+}
+
+* {
+	font-size: 62.5%;
+	text-decoration: none;
+}
+/* Navbar */
+nav {
+	height: 90px;
+	width: 100vw;
+	background-color: #0b1727;
+	border-bottom: 1px #ffeb01 solid;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+/* Navbar / Nav-search */
+.nav-search {
+	display: flex;
+	align-items: center;
+}
+
+.nav-search img {
+	margin-right: 200px;
+}
+
+.nav-search .search {
+	width: 750px;
+	height: 36px;
+	margin-right: 200px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.nav-search .search-icon {
+	font-size: 1rem;
+	height: 28px;
+	width: 60px;
+	background-color: #ffeb01;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.nav-search input {
+	width: 680px;
+	height: 33px;
+	border: none;
+	margin-right: 3px;
+	font-size: 1rem;
+}
+
+.nav-search .cart {
+	color: white;
+	font-size: 1.8rem;
+	margin-right: 30px;
+	position: relative;
+	display: block;
+}
+
+.nav-search .cart:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search .cart ~ button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.nav-search button {
+	width: 70px;
+	height: 35px;
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: #ffeb01;
+	font-weight: 700;
+	font-size: 0.8rem;
+	display: block;
+}
+
+.nav-search .avatar{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: none;
+}
+
+.nav-search .avatar ~ p{
+	font-size: 1rem;
+	font-weight: 900;
+	color: white;
+	display: none;
+}
+
+/* Login success and fail */
+.login-success{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: green;
+	color: white;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+	font-size: 1.5rem;
+}
+
+.login-fail{
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+	font-size: 1.5rem;
+}
+
+.login-success > i, .login-fail > i{
+	font-size: 4rem;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.login-success > div, .login-fail > div{
+	margin-top: 50px;
+}
+
+.login-success > .exit, .login-fail > .exit{
+	margin-top: -2px;
+}
+
+/* Login */
+.login {
+	position: fixed;
+	margin-top: 200px;
+	margin-left: 500px;
+	background-color: #fff;
+	text-align: center;
+	width: 440px;
+	z-index: 6;
+	border-radius: 10px;
+	display: none;
+}
+
+.login .gmail {
+	display: none;
+}
+
+.login .login-title {
+	margin-top: 20px;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.login input {
+	margin-top: 10px;
+	width: 182px;
+	height: 27px;
+}
+
+.login .button {
+	margin-top: 10px;
+	padding: 10px 10px;
+	max-width: 120px;
+	border-radius: 10px;
+	background-color: #ffeb01;
+	margin-left: 150px;
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.login .button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.login input ~ p {
+	color: red;
+	font-size: 0.8rem;
+	font-weight: 900;
+	display: none;
+}
+
+#username-text{
+	margin-left: -22px;
+}
+
+#password-text{
+	margin-left: -24px;
+}
+
+#gmail-text{
+	margin-left: 14px;
+}
+
+.login-subtitle {
+	display: flex;
+	align-items: center;
+	margin-left: 130px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.login-subtitle .question {
+	font-size: 0.8rem;
+	margin-right: 6px;
+}
+
+.login-subtitle .sign-up {
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.login-subtitle .sign-up:hover {
+	cursor: pointer;
+}
+
+/* Lớp phủ */
+.coat {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	background-color: grey;
+	opacity: 0.5;
+	position: fixed;
+}
+
+/* Done */
+
+.done {
+	width: 100%;
+	height: 300px;
+	margin-top: 255px;
+	background-color: #0b1727;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 71%;
+	font-size: 1.3rem;
+	padding-top: 20px;
+}
+
+.done .row{
+	display: flex;
+	align-items: center;
+}
+
+.done .icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 1.5rem;
+	color: black;
+	text-align: center;
+	line-height: 43px;
+}
+
+.done .row p{
+	padding-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.done .column2 .title{
+	font-size: 1.5rem;
+	font-weight: 900;
+	margin: 0;
+	text-align: start;
+}
+
+.done .column2 .content{
+	font-size: 1.1rem;
+	opacity: 0.7;
+	line-height: 30px;
+}
+
+.done .icon-list{
+	display: flex;
+	margin-top: 20px;
+}
+
+.done .icon-list .icon{
+	border: 0.7px solid white;
+	border-radius: 5px;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.done .icon-list .icon:hover{
+	cursor: pointer;
+	background-color: aqua;
+}
+
+/* Product-row */
+.product-row{
+	display: flex;
+	width: 80%;
+	height: 400px;
+	margin: 150px auto 0 auto;
+}
+
+.product-row .product-image{
+	width: 40%;
+}
+
+.product-image img{
+	margin-left: 70px;
+	width: 280px;
+	height: 280px;
+}
+
+.product-list-image{
+	display: flex;
+	margin-top: 10px;
+	margin-left: 95px;
+}
+
+.product-list-image .product-image-select{
+	margin-left: 5px;
+	width: 40px;
+	height: 40px;
+	padding: 4px 4px;
+	border: 1px solid #ffeb01;
+}
+
+.product-list-image .product-image-select:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.product-list-image img{
+	margin: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+.share{
+	font-size: 1.3rem;
+	font-weight: 900;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.share .share-image{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.share img{
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Product info */
+.product-info{
+	width: 60%;
+}
+
+.title{
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.title p{
+	font-size: 1.7rem;
+	font-weight: 900;
+}
+
+.product-info .star {
+	display: flex;
+	color: #ffeb01;
+	font-size: 1rem;
+}
+
+.product-info .row{
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 1rem;
+}
+
+option{
+	font-size: 1rem;
+}
+
+.product-info .row1{
+	align-items: center;
+	justify-content: space-around;
+}
+
+.product-info .row2{
+	justify-content: center;
+}
+
+.row2 .price{
+	font-size: 1.7rem;
+}
+
+.row2 .sale-off{
+	padding: 0px 5px;
+	line-height: 23px;
+	font-size: 1.2rem;
+	background-color: #ffeb01;
+	margin-left: 20px;
+}
+
+.row3 div{
+	margin-right: 390px;
+}
+
+.row3 select{
+	width: 108px;
+	height: 32;
+}
+
+.row4 > div:first-child{
+	margin-right: 390px;
+}
+
+.row4 .select-color{
+	display: flex;
+}
+
+.row4 .select-info{
+	width: 64px;
+	height: 23px;
+	line-height: 23px;
+	border: 1px solid #ffeb01;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.row4 .select-info:hover{
+	cursor: pointer;
+	background-color: #ffeb01;
+}
+
+.row5 > div:first-child{
+	margin-right: 390px;
+}
+
+.row5 .select-number{
+	display: flex;
+}
+
+.row5 .change{
+	width: 20px;
+	height: 20px;
+	background-color: #FAF5F5;
+	text-align: center;
+	border: 1px solid #ffeb01;
+	margin: auto 10px auto 10px;
+}
+
+.row5 .change:hover{
+	cursor: pointer;
+	background-color: #ffeb01;
+}
+
+.row6{
+	justify-content: space-between;
+}
+
+.row6 .add-product{
+	display: flex;
+}
+
+.row6 .btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 36px;
+	background-color: #ffeb01;
+	border: 1px solid #ffeb01;
+}
+
+.row6 .btn:hover{
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.row6 i{
+	line-height: 36px;
+	margin-left: 14px;
+	margin-right: 4px;
+}
+
+.row7{
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/* Comment */
+.comment{
+	margin-top: 20px;
+	margin-left: 158px;
+}
+.comment > p{
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.comment input{
+	margin-top: 60px;
+	width: 1300px;
+	height: 20px;
+	border: 1px solid #ffeb01;
+	font-size: 1rem;
+}
+
+.comment .btn{
+	margin-top: 20px;
+	width: 600px;
+	height: 30px;
+	background-color: #ffeb01;
+	border: 1px solid #ffeb01;
+	border-radius: 10px;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 29px;
+	margin-left: 360px;
+}
+
+.comment .btn:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
